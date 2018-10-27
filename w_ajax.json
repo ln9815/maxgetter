@@ -1,0 +1,3312 @@
+{
+  "activeFacets": {
+    "inSales": [
+      "false"
+    ],
+    "colorFilter": [
+      "Black",
+      "Blue and light blue",
+      "Brown And camel",
+      "Green",
+      "Grey and silver",
+      "Nude And neutrals",
+      "Pink",
+      "Prints and patterns",
+      "Purple and lilac",
+      "Red and burgundy",
+      "White and beige",
+      "Yellow And orange"
+    ],
+    "allCategories": [
+      "102",
+      "500",
+      "501",
+      "502",
+      "503",
+      "506",
+      "507",
+      "509",
+      "515",
+      "516"
+    ],
+    "sizeFilter": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "materialFilter": [
+      "Alpaca",
+      "Angora",
+      "Camel",
+      "Cashmere",
+      "Cotton",
+      "Fur",
+      "Jersey",
+      "Mohair",
+      "Silk",
+      "Synthetic fibres",
+      "Viscose",
+      "Wool"
+    ],
+    "maxMaraCollectionCode": [
+      "501",
+      "502",
+      "503",
+      "506",
+      "507",
+      "509",
+      "515"
+    ],
+    "maxMaraCollection": [
+      "'S Max Mara",
+      "Atelier",
+      "Max Mara",
+      "Sfilata",
+      "Studio",
+      "The Cube",
+      "Weekend"
+    ],
+    "sleeveLengthFilter": [
+      "Long sleeved",
+      "Three quarter sleeve"
+    ],
+    "lengthFilter": [
+      "Knee length",
+      "Long",
+      "Mid length",
+      "Short"
+    ]
+  },
+  "searchPageData": {
+    "results": [
+      {
+        "group": "Max Mara",
+        "groupCode": "501",
+        "description": null,
+        "active": null,
+        "numberFound": 190,
+        "productList": [
+          {
+            "code": "1496038306002",
+            "name": "KNUT",
+            "url": "/p-1496038306002-knut-black",
+            "description": "Double-breasted, oversized coat in pure silk organza with lapels and welt pockets. This item features camel-fibre padding covered in pure silk cr\u00eape de Chine fabric. Lined. Button fastening.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Silk and camel Anima coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 1200.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,200.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1496038306/002/s3master/1496038306002-a-knut_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1496038306/002/s3master/1496038306002-a-knut_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "501",
+            "collectionName": "Max Mara",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "black",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 1200.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,200.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1496048306009",
+            "name": "KIRIE",
+            "url": "/p-1496048306009-kirie-camel",
+            "description": "Double-breasted, masculine-style coat in pure silk organza with lapels and flap pockets. This item features camel-fibre padding covered in pure silk cr\u00eape de Chine fabric. Lined. Button fastening.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Silk and camel Anima coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 1200.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,200.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1496048306/009/s3master/1496048306009-a-kirie_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1496048306/009/s3master/1496048306009-a-kirie_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "501",
+            "collectionName": "Max Mara",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "camel",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 1200.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,200.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1496058306008",
+            "name": "PAROLA",
+            "url": "/p-1496058306008-parola-silk",
+            "description": "Pure silk organza wraparound coat with hood and patch pockets. This item features camel-fibre padding covered in pure silk cr\u00eape de Chine fabric. Lined. Fastening with matching belt.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Silk and camel Anima coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 1200.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,200.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1496058306/008/s3master/1496058306008-a-parola_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1496058306/008/s3master/1496058306008-a-parola_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "501",
+            "collectionName": "Max Mara",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "silk",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 1200.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,200.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1086028506001",
+            "name": "SAFARI",
+            "url": "/p-1086028506001-safari-ultramarine",
+            "description": "Pea coat in cashmere and wool with double lined collar. The garment has long kimono sleeves, welt pockets and double-breasted fastening with snap buttons.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Cashmere and wool coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 1700.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,700.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1086028506/001/s3master/1086028506001-a-safari_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1086028506/001/s3master/1086028506001-a-safari_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "502",
+            "collectionName": "Atelier",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "ultramarine",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 1700.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,700.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1016118506005",
+            "name": "LADINO",
+            "url": "/p-1016118506005-ladino-black",
+            "description": "Coat in cashmere and wool with trompe l'oeil double effect collar and lined with beaver fur. The garment has long kimono sleeves, inset pockets on the seams and fastening with matching belt.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Cashmere and wool coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 2600.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac2,600.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016118506/005/s3master/1016118506005-a-ladino_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016118506/005/s3master/1016118506005-a-ladino_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "502",
+            "collectionName": "Atelier",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "black",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 2600.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac2,600.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1016018506004",
+            "name": "ALI",
+            "url": "/p-1016018506004-ali-medium-grey",
+            "description": "Long redingote coat in cashmere and wool with inner lining. The wide lapel collar is covered in mink fur. Welt side pockets and fastening with matching belt.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Cashmere and wool coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 4500.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac4,500.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016018506/004/s3master/1016018506004-a-ali_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016018506/004/s3master/1016018506004-a-ali_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "502",
+            "collectionName": "Atelier",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "medium grey",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 4500.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac4,500.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1016048506001",
+            "name": "MARTA",
+            "url": "/p-1016048506001-marta-light-grey",
+            "description": "Redingote coat in alpaca and wool with wide lapel, maxi patch pockets and mohair trimmed edges in contrasting colour. The garment comes with a thin belt for tying and a wide belt with buttons.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Alpaca and wool coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 2800.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac2,800.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016048506/001/s3master/1016048506001-a-marta_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016048506/001/s3master/1016048506001-a-marta_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "502",
+            "collectionName": "Atelier",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "light grey",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 2800.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac2,800.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1016068506005",
+            "name": "LUCIA",
+            "url": "/p-1016068506005-lucia-kaki",
+            "description": "Menswear-inspired coat in pure cashmere with lapel collar, welt pockets, long low set-in sleeves and leather detail. Fastens with a thin leather belt.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Pure cashmere coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 2700.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac2,700.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016068506/005/s3master/1016068506005-a-lucia_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016068506/005/s3master/1016068506005-a-lucia_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "502",
+            "collectionName": "Atelier",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "kaki",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 2700.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac2,700.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1016028506001",
+            "name": "FELTRO",
+            "url": "/p-1016028506001-feltro-ultramarine",
+            "description": "Long flared coat with high neck, welt pockets and wide slits on the sides. Fastens with a matching belt. Finished with saddle seam stitching.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Cashmere and wool coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 1700.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,700.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016028506/001/s3master/1016028506001-a-feltro_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016028506/001/s3master/1016028506001-a-feltro_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "502",
+            "collectionName": "Atelier",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "ultramarine",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 1700.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,700.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1016108506002",
+            "name": "AGAVE",
+            "url": "/p-1016108506002-agave-camel",
+            "description": "Oversized coat in pure camel with large shawl collar to wear as a hood or foulard. The garment has long kimono sleeves, patch pockets and wide slits on the sides. Unlined.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Pure camel coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 2400.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac2,400.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016108506/002/s3master/1016108506002-a-agave_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016108506/002/s3master/1016108506002-a-agave_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "502",
+            "collectionName": "Atelier",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "camel",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 2400.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac2,400.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1086018906001",
+            "name": "GASTONE",
+            "url": "/p-1086018906001-gastone-camel",
+            "description": "Double-breasted pure camel hair coat with beaver fur, step lapel and large welt pockets on the sides. Slightly egg shape with kimono sleeves. Button fastening.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Camel hair coat with beaver fur",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 1100.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,100.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1086018906/001/s3master/1086018906001-a-gastone_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1086018906/001/s3master/1086018906001-a-gastone_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "501",
+            "collectionName": "Max Mara",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "camel",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 1100.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,100.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1086018906005",
+            "name": "GASTONE",
+            "url": "/p-1086018906005-gastone-midnightblue",
+            "description": "Double-breasted pure camel hair coat with beaver fur, step lapel and large welt pockets on the sides. Slightly egg shape with kimono sleeves. Button fastening.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Camel hair coat with beaver fur",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 1100.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,100.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1086018906/005/s3master/1086018906005-a-gastone_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1086018906/005/s3master/1086018906005-a-gastone_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "501",
+            "collectionName": "Max Mara",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "midnightblue",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 1100.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,100.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1016038906001",
+            "name": "FAUST",
+            "url": "/p-1016038906001-faust-light-grey",
+            "description": "Hand-sewn double-breasted coat in two layers of pure cashmere with step lapels, patch pockets and half belt. Kimono sleeves on the front with raglan construction at the back. Button fastening.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Cashmere coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 2300.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac2,300.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016038906/001/s3master/1016038906001-a-faust_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016038906/001/s3master/1016038906001-a-faust_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "501",
+            "collectionName": "Max Mara",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "light grey",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 2300.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac2,300.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1016048906001",
+            "name": "TUNDRA",
+            "url": "/p-1016048906001-tundra-ivory",
+            "description": "Hand-sewn long coat in two layers of wool and cashmere with round neck, kimono sleeves and inset side pockets. Fastens with buttons and matching belt.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Cashmere and wool coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 1800.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,800.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016048906/001/s3master/1016048906001-a-tundra_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016048906/001/s3master/1016048906001-a-tundra_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "501",
+            "collectionName": "Max Mara",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "ivory",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 1800.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,800.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1016258306010",
+            "name": "FURETTO",
+            "url": "/p-1016258306010-furetto-light-grey",
+            "description": "Long wrap coat made of heavyweight camel melange with step lapels, breast pocket and inset side pockets with flaps. Straight-fit with slit in the middle of the back. Silk lining. Concealed button fastening.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Camel melange coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 1400.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,400.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016258306/010/s3master/1016258306010-a-furetto_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1016258306/010/s3master/1016258306010-a-furetto_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "501",
+            "collectionName": "Max Mara",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "light grey",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 1400.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,400.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          },
+          {
+            "code": "1086028906009",
+            "name": "NELLA",
+            "url": "/p-1086028906009-nella-ultramarine",
+            "description": "Hand-sewn wrap coat in two layers of pure wool and cashmere with step lapels and patch pockets. Straight fit with kimono sleeves. Fastens with matching belt.",
+            "purchasable": null,
+            "stock": null,
+            "futureStocks": null,
+            "availableForPickup": null,
+            "averageRating": null,
+            "numberOfReviews": null,
+            "summary": "Cashmere and wool coat",
+            "manufacturer": null,
+            "variantType": null,
+            "price": {
+              "currencyIso": "EUR",
+              "value": 1300.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,300.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "baseProduct": null,
+            "images": [
+              {
+                "imageType": "PRIMARY",
+                "format": "product",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1086028906/009/s3master/1086028906009-a-nella_normal.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              },
+              {
+                "imageType": "PRIMARY",
+                "format": "thumbnail",
+                "url": "https://dx0woejilafh2.cloudfront.net/sys-master/m0/MM/2018/2/1086028906/009/s3master/1086028906009-a-nella_thumbnail.jpg",
+                "altText": null,
+                "galleryIndex": null,
+                "width": null,
+                "description": null
+              }
+            ],
+            "categories": null,
+            "reviews": null,
+            "classifications": null,
+            "potentialPromotions": null,
+            "variantOptions": null,
+            "baseOptions": null,
+            "volumePricesFlag": false,
+            "volumePrices": null,
+            "productReferences": null,
+            "variantMatrix": null,
+            "priceRange": null,
+            "firstCategoryNameList": null,
+            "multidimensional": null,
+            "configurable": null,
+            "keywords": null,
+            "additionalImages": null,
+            "alternateSku": null,
+            "availabilityDate": null,
+            "care": null,
+            "collectionCode": "501",
+            "collectionName": "Max Mara",
+            "colorid": null,
+            "composition": null,
+            "compositionDetail": null,
+            "curvyVisible": null,
+            "imageOffset": null,
+            "isBundle": null,
+            "isCurvy": null,
+            "isInCart": null,
+            "isInSales": false,
+            "isInStock": null,
+            "isInWishlist": null,
+            "isNewArrival": false,
+            "isSpecialPrice": null,
+            "madeIn": null,
+            "modelFitting": null,
+            "refCategory": null,
+            "salePrice": null,
+            "seasonCode": null,
+            "seasonName": null,
+            "sizeFitting": null,
+            "sizeVariantList": null,
+            "taxabilityClass": null,
+            "technicalName": null,
+            "variantsSwatches": null,
+            "video": null,
+            "washingDetail": null,
+            "youtubeVideo": null,
+            "colour": "ultramarine",
+            "colorEn": null,
+            "seoTitle": null,
+            "seoDescription": null,
+            "silhouette": null,
+            "categorypath": null,
+            "collection": null,
+            "siblingCategories": null,
+            "rewardPoints": null,
+            "sizes": null,
+            "regular": false,
+            "bestseller": false,
+            "giftcard": false,
+            "food": false,
+            "available": false,
+            "onsale": false,
+            "colorVariant": true,
+            "sizeVariant": false,
+            "bundle": false,
+            "specialedition": false,
+            "showstock": false,
+            "originalPrice": {
+              "currencyIso": "EUR",
+              "value": 1300.0,
+              "priceType": "BUY",
+              "formattedValue": "\u20ac1,300.00",
+              "minQuantity": null,
+              "maxQuantity": null,
+              "saleValue": null,
+              "saleFormattedValue": null,
+              "saleDateRange": null
+            },
+            "salesPrice": null,
+            "specialPrice": null,
+            "colorPrice": 0.0,
+            "colorDiscountPrice": 0.0,
+            "season": null,
+            "colorStock": 0,
+            "percentageOfSize": null,
+            "variance": 0.0,
+            "sizesPresence": 0.0
+          }
+        ]
+      }
+    ],
+    "sorts": [
+      {
+        "code": "topRated",
+        "name": "Our favourites",
+        "selected": true
+      },
+      {
+        "code": "price-asc",
+        "name": "Price Asc",
+        "selected": false
+      },
+      {
+        "code": "price-desc",
+        "name": "Price Desc",
+        "selected": false
+      },
+      {
+        "code": "price-asc-sale",
+        "name": "Price (low to high)",
+        "selected": false
+      },
+      {
+        "code": "price-desc-sale",
+        "name": "Price (high to low)",
+        "selected": false
+      }
+    ],
+    "pagination": {
+      "pageSize": 16,
+      "currentPage": 0,
+      "sort": "topRated",
+      "enableSearchPageSize": null,
+      "multiListing": null,
+      "numberOfPages": 1,
+      "totalNumberOfResults": 190
+    },
+    "currentQuery": {
+      "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue",
+      "query": {
+        "value": ":topRated:collectionActive:true:filterEnabled:true"
+      },
+      "searchType": null
+    },
+    "breadcrumbs": [
+      {
+        "facetCode": "collectionActive",
+        "facetName": "collectionActive",
+        "facetValueCode": "true",
+        "facetValueName": "true",
+        "removeQuery": {
+          "url": "/coats/c-101?q=%3AtopRated%3AfilterEnabled%3Atrue",
+          "query": {
+            "value": ":topRated:filterEnabled:true"
+          },
+          "searchType": null
+        },
+        "truncateQuery": {
+          "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue",
+          "query": {
+            "value": ":topRated:collectionActive:true"
+          },
+          "searchType": null
+        }
+      },
+      {
+        "facetCode": "filterEnabled",
+        "facetName": "filterEnabled",
+        "facetValueCode": "true",
+        "facetValueName": "true",
+        "removeQuery": {
+          "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue",
+          "query": {
+            "value": ":topRated:collectionActive:true"
+          },
+          "searchType": null
+        },
+        "truncateQuery": null
+      }
+    ],
+    "facets": [
+      {
+        "code": "inSales",
+        "name": "inSales",
+        "priority": 16000,
+        "category": false,
+        "multiSelect": true,
+        "visible": true,
+        "topValues": null,
+        "values": [
+          {
+            "code": "false",
+            "name": "false",
+            "count": 190,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AinSales%3Afalse",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:inSales:false"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "false"
+          }
+        ]
+      },
+      {
+        "code": "sleeveLengthFilter",
+        "name": "Sleeves",
+        "priority": 1000,
+        "category": false,
+        "multiSelect": true,
+        "visible": true,
+        "topValues": null,
+        "values": [
+          {
+            "code": "Long sleeved",
+            "name": "Long sleeved",
+            "count": 173,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AsleeveLengthFilter%3ALong+sleeved",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:sleeveLengthFilter:Long sleeved"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Long sleeved"
+          },
+          {
+            "code": "Three quarter sleeve",
+            "name": "Three quarter sleeve",
+            "count": 2,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AsleeveLengthFilter%3AThree+quarter+sleeve",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:sleeveLengthFilter:Three quarter sleeve"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Three quarter sleeve"
+          }
+        ]
+      },
+      {
+        "code": "sizeFilter",
+        "name": "Size",
+        "priority": 1000,
+        "category": false,
+        "multiSelect": true,
+        "visible": true,
+        "topValues": null,
+        "values": [
+          {
+            "code": "XS",
+            "name": "XS",
+            "count": 177,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AsizeFilter%3AXS",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:sizeFilter:XS"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "XS"
+          },
+          {
+            "code": "S",
+            "name": "S",
+            "count": 190,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AsizeFilter%3AS",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:sizeFilter:S"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "S"
+          },
+          {
+            "code": "M",
+            "name": "M",
+            "count": 190,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AsizeFilter%3AM",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:sizeFilter:M"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "M"
+          },
+          {
+            "code": "L",
+            "name": "L",
+            "count": 190,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AsizeFilter%3AL",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:sizeFilter:L"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "L"
+          },
+          {
+            "code": "XL",
+            "name": "XL",
+            "count": 180,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AsizeFilter%3AXL",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:sizeFilter:XL"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "XL"
+          },
+          {
+            "code": "XXL",
+            "name": "XXL",
+            "count": 172,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AsizeFilter%3AXXL",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:sizeFilter:XXL"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "XXL"
+          }
+        ]
+      },
+      {
+        "code": "materialFilter",
+        "name": "Material",
+        "priority": 1000,
+        "category": false,
+        "multiSelect": true,
+        "visible": true,
+        "topValues": null,
+        "values": [
+          {
+            "code": "Alpaca",
+            "name": "Alpaca",
+            "count": 31,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3AAlpaca",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Alpaca"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Alpaca"
+          },
+          {
+            "code": "Angora",
+            "name": "Angora",
+            "count": 14,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3AAngora",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Angora"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Angora"
+          },
+          {
+            "code": "Camel",
+            "name": "Camel",
+            "count": 24,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3ACamel",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Camel"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Camel"
+          },
+          {
+            "code": "Cashmere",
+            "name": "Cashmere",
+            "count": 38,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3ACashmere",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Cashmere"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Cashmere"
+          },
+          {
+            "code": "Cotton",
+            "name": "Cotton",
+            "count": 3,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3ACotton",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Cotton"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Cotton"
+          },
+          {
+            "code": "Fur",
+            "name": "Fur",
+            "count": 6,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3AFur",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Fur"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Fur"
+          },
+          {
+            "code": "Jersey",
+            "name": "Jersey",
+            "count": 1,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3AJersey",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Jersey"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Jersey"
+          },
+          {
+            "code": "Mohair",
+            "name": "Mohair",
+            "count": 4,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3AMohair",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Mohair"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Mohair"
+          },
+          {
+            "code": "Silk",
+            "name": "Silk",
+            "count": 3,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3ASilk",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Silk"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Silk"
+          },
+          {
+            "code": "Synthetic fibres",
+            "name": "Synthetic fibres",
+            "count": 6,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3ASynthetic+fibres",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Synthetic fibres"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Synthetic fibres"
+          },
+          {
+            "code": "Viscose",
+            "name": "Viscose",
+            "count": 3,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3AViscose",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Viscose"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Viscose"
+          },
+          {
+            "code": "Wool",
+            "name": "Wool",
+            "count": 106,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaterialFilter%3AWool",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:materialFilter:Wool"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Wool"
+          }
+        ]
+      },
+      {
+        "code": "lengthFilter",
+        "name": "Length",
+        "priority": 1000,
+        "category": false,
+        "multiSelect": true,
+        "visible": false,
+        "topValues": null,
+        "values": [
+          {
+            "code": "Knee length",
+            "name": "Knee length",
+            "count": 8,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AlengthFilter%3AKnee+length",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:lengthFilter:Knee length"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Knee length"
+          },
+          {
+            "code": "Long",
+            "name": "Long",
+            "count": 85,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AlengthFilter%3ALong",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:lengthFilter:Long"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Long"
+          },
+          {
+            "code": "Mid length",
+            "name": "Mid length",
+            "count": 10,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AlengthFilter%3AMid+length",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:lengthFilter:Mid length"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Mid length"
+          },
+          {
+            "code": "Short",
+            "name": "Short",
+            "count": 2,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AlengthFilter%3AShort",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:lengthFilter:Short"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Short"
+          }
+        ]
+      },
+      {
+        "code": "colorFilter",
+        "name": "Colour",
+        "priority": 1000,
+        "category": false,
+        "multiSelect": true,
+        "visible": true,
+        "topValues": null,
+        "values": [
+          {
+            "code": "Black",
+            "name": "Black",
+            "count": 32,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3ABlack",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Black"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Black"
+          },
+          {
+            "code": "Blue and light blue",
+            "name": "Blue and light blue",
+            "count": 27,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3ABlue+and+light+blue",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Blue and light blue"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Blue and light blue"
+          },
+          {
+            "code": "Brown And camel",
+            "name": "Brown And camel",
+            "count": 45,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3ABrown+And+camel",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Brown And camel"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Brown And camel"
+          },
+          {
+            "code": "Green",
+            "name": "Green",
+            "count": 2,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3AGreen",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Green"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Green"
+          },
+          {
+            "code": "Grey and silver",
+            "name": "Grey and silver",
+            "count": 20,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3AGrey+and+silver",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Grey and silver"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Grey and silver"
+          },
+          {
+            "code": "Nude And neutrals",
+            "name": "Nude And neutrals",
+            "count": 4,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3ANude+And+neutrals",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Nude And neutrals"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Nude And neutrals"
+          },
+          {
+            "code": "Pink",
+            "name": "Pink",
+            "count": 11,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3APink",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Pink"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Pink"
+          },
+          {
+            "code": "Prints and patterns",
+            "name": "Prints and patterns",
+            "count": 12,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3APrints+and+patterns",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Prints and patterns"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Prints and patterns"
+          },
+          {
+            "code": "Purple and lilac",
+            "name": "Purple and lilac",
+            "count": 2,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3APurple+and+lilac",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Purple and lilac"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Purple and lilac"
+          },
+          {
+            "code": "Red and burgundy",
+            "name": "Red and burgundy",
+            "count": 12,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3ARed+and+burgundy",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Red and burgundy"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Red and burgundy"
+          },
+          {
+            "code": "White and beige",
+            "name": "White and beige",
+            "count": 26,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3AWhite+and+beige",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:White and beige"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "White and beige"
+          },
+          {
+            "code": "Yellow And orange",
+            "name": "Yellow And orange",
+            "count": 1,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AcolorFilter%3AYellow+And+orange",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:colorFilter:Yellow And orange"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Yellow And orange"
+          }
+        ]
+      },
+      {
+        "code": "maxMaraCollection",
+        "name": "Collection",
+        "priority": 1000,
+        "category": false,
+        "multiSelect": true,
+        "visible": true,
+        "topValues": null,
+        "values": [
+          {
+            "code": "'S Max Mara",
+            "name": "'S Max Mara",
+            "count": 49,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollection%3A%27S+Max+Mara",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollection:'S Max Mara"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "'S Max Mara"
+          },
+          {
+            "code": "Atelier",
+            "name": "Atelier",
+            "count": 7,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollection%3AAtelier",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollection:Atelier"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Atelier"
+          },
+          {
+            "code": "Max Mara",
+            "name": "Max Mara",
+            "count": 57,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollection%3AMax+Mara",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollection:Max Mara"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Max Mara"
+          },
+          {
+            "code": "Sfilata",
+            "name": "Sfilata",
+            "count": 9,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollection%3ASfilata",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollection:Sfilata"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Sfilata"
+          },
+          {
+            "code": "Studio",
+            "name": "Studio",
+            "count": 38,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollection%3AStudio",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollection:Studio"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Studio"
+          },
+          {
+            "code": "The Cube",
+            "name": "The Cube",
+            "count": 2,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollection%3AThe+Cube",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollection:The Cube"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "The Cube"
+          },
+          {
+            "code": "Weekend",
+            "name": "Weekend",
+            "count": 28,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollection%3AWeekend",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollection:Weekend"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "Weekend"
+          }
+        ]
+      },
+      {
+        "code": "maxMaraCollectionCode",
+        "name": "maxMaraCollectionCode",
+        "priority": -1,
+        "category": false,
+        "multiSelect": true,
+        "visible": false,
+        "topValues": null,
+        "values": [
+          {
+            "code": "501",
+            "name": "501",
+            "count": 57,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollectionCode%3A501",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollectionCode:501"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "501"
+          },
+          {
+            "code": "502",
+            "name": "502",
+            "count": 7,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollectionCode%3A502",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollectionCode:502"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "502"
+          },
+          {
+            "code": "503",
+            "name": "503",
+            "count": 9,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollectionCode%3A503",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollectionCode:503"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "503"
+          },
+          {
+            "code": "506",
+            "name": "506",
+            "count": 49,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollectionCode%3A506",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollectionCode:506"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "506"
+          },
+          {
+            "code": "507",
+            "name": "507",
+            "count": 2,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollectionCode%3A507",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollectionCode:507"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "507"
+          },
+          {
+            "code": "509",
+            "name": "509",
+            "count": 38,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollectionCode%3A509",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollectionCode:509"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "509"
+          },
+          {
+            "code": "515",
+            "name": "515",
+            "count": 28,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AmaxMaraCollectionCode%3A515",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:maxMaraCollectionCode:515"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "515"
+          }
+        ]
+      },
+      {
+        "code": "allCategories",
+        "name": "allCategories",
+        "priority": -9999,
+        "category": true,
+        "multiSelect": false,
+        "visible": false,
+        "topValues": null,
+        "values": [
+          {
+            "code": "102",
+            "name": "102",
+            "count": 3,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AallCategories%3A102",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:allCategories:102"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "102"
+          },
+          {
+            "code": "500",
+            "name": "500",
+            "count": 188,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AallCategories%3A500",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:allCategories:500"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "500"
+          },
+          {
+            "code": "501",
+            "name": "501",
+            "count": 57,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AallCategories%3A501",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:allCategories:501"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "501"
+          },
+          {
+            "code": "502",
+            "name": "502",
+            "count": 7,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AallCategories%3A502",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:allCategories:502"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "502"
+          },
+          {
+            "code": "503",
+            "name": "503",
+            "count": 9,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AallCategories%3A503",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:allCategories:503"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "503"
+          },
+          {
+            "code": "506",
+            "name": "506",
+            "count": 49,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AallCategories%3A506",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:allCategories:506"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "506"
+          },
+          {
+            "code": "507",
+            "name": "507",
+            "count": 2,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AallCategories%3A507",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:allCategories:507"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "507"
+          },
+          {
+            "code": "509",
+            "name": "509",
+            "count": 36,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AallCategories%3A509",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:allCategories:509"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "509"
+          },
+          {
+            "code": "515",
+            "name": "515",
+            "count": 28,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AallCategories%3A515",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:allCategories:515"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "515"
+          },
+          {
+            "code": "516",
+            "name": "516",
+            "count": 2,
+            "query": {
+              "url": "/coats/c-101?q=%3AtopRated%3AcollectionActive%3Atrue%3AfilterEnabled%3Atrue%3AallCategories%3A516",
+              "query": {
+                "value": ":topRated:collectionActive:true:filterEnabled:true:allCategories:516"
+              },
+              "searchType": null
+            },
+            "selected": false,
+            "label": "516"
+          }
+        ]
+      }
+    ],
+    "freeTextSearch": "",
+    "categoryCode": "101",
+    "keywordRedirectUrl": null,
+    "spellingSuggestion": null,
+    "subCategories": null
+  },
+  "totalPage": 12
+}
