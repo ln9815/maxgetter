@@ -1,0 +1,9 @@
+CREATE TABLE product_saved (
+    cata_name               TEXT,
+    cata_page_url           TEXT (500),
+    product_code            TEXT,
+    product_name            TEXT,
+    product_page_url        TEXT,
+    product_zoom_image_urls TEXT,
+    product_zoom_images     TEXT
+);
