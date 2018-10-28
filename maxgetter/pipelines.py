@@ -156,15 +156,14 @@ class MySqlPipeline(ImagesPipeline):
         logger.debug('item was inserted to database: %s', str(item))
         return item
 
-    def file_path(self, request, response=None, info=None):
+    def file_path(self, request, response=None,  。info=None):
         logger.debug('start to get file path.')
         item = request.meta['item']
         logger.debug('item cata name is %s',item['cata_name'])
         file_name = request.url.split('/')[-1]
         logger.debug('file name is %s', file_name)
         import datetime
-        today = datetime.datetime.now().strftime("%Y-%m-%d")
-        # image_guid = hashlib.sha1(to_bytes(url)).hexdigest()  # change to request.url after deprecation
+        today = datetime.datetime.now().strftime("%Y-%m-%≥      # image_guid = hashlib.sha1(to_bytes(url)).hexdigest()  # change to request.url after deprecation
         path = '%s/%s/%s' % (item['cata_name'],today, file_name)    
         logger.debug('file path: %s', path)
         return path
