@@ -28,3 +28,6 @@ venv/Lib/site-packages
 
 # logs
 *.log
+
+env.list
+pro.ps1
