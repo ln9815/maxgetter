@@ -4,6 +4,7 @@ from sqlalchemy import (Column, DateTime, ForeignKey, Integer, String, and_,
                         create_engine, literal, select)
 from sqlalchemy.orm import Session, declarative_base, relationship
 from sqlalchemy.sql import func
+from sqlalchemy import text, insert
 
 logger = logging.getLogger(__name__)
 Base = declarative_base()
@@ -74,42 +75,58 @@ class MaxDB(object):
         self.engine = create_engine(db_url, echo=False, future=True)
 
     def add_categroies(self, categories):
-        from sqlalchemy.dialects.mysql import Insert
-
         data = [{x: item[x]
                  for x in ('id', 'name', 'season', 'rootid')} for item in categories]
 
         with self.engine.connect() as connection:
             for item in data:
-                insert_stmt = Insert(Category).values(**item)
-                on_duplicate_key_stmt = insert_stmt.on_duplicate_key_update(
-                    last_update=func.current_timestamp())
-                connection.execute(on_duplicate_key_stmt)
+                if self.engine.name == 'mysql':
+                    insert_stmt = insert(Category).values(
+                        **item).prefix_with('IGNORE')
+                    # on_duplicate_key_stmt = insert_stmt.on_duplicate_key_update(
+                    #     name=insert_stmt.inserted.name,
+                    #     season=insert_stmt.inserted.season,
+                    #     rootid=insert_stmt.inserted.rootid,
+                    #     last_update=func.current_timestamp())
+                elif self.engine.name == 'sqlite':
+                    insert_stmt = insert(Category).values(
+                        **item).prefix_with('OR IGNORE')
+                    # do_update_stmt = insert_stmt.on_conflict_do_update(
+                    #     index_elements=['id'],
+                    #     set_=dict(name=insert_stmt.excluded.name,
+                    #               season=insert_stmt.excluded.season,
+                    #               last_update=func.now()))
+                connection.execute(insert_stmt)
             connection.commit()
 
     def add_product(self, product):
-        from sqlalchemy.dialects.mysql import Insert
-
         item = {x: product[x] for x in ('id', 'title', 'href', 'categoryid')}
         with self.engine.connect() as connection:
-            insert_stmt = Insert(Product).values(**item)
-            on_duplicate_key_stmt = insert_stmt.on_duplicate_key_update(
-                last_update=func.current_timestamp())
-            connection.execute(on_duplicate_key_stmt)
+            if self.engine.name == 'mysql':
+                insert_stmt = insert(Product).values(
+                    **item).prefix_with('IGNORE')
+                connection.execute(insert_stmt)
+            elif self.engine.name == 'sqlite':
+                insert_stmt = insert(Product).values(
+                    **item).prefix_with('OR IGNORE')
+                connection.execute(insert_stmt)
             connection.commit()
 
     def add_product_images(self, product, images):
-        from sqlalchemy.dialects.mysql import Insert
 
         with self.engine.connect() as connection:
             for image in images:
                 image['product_id'] = product['id']
                 item = {x: image[x]
                         for x in ('href', 'filename', 'product_id')}
-                insert_stmt = Insert(Image).values(**item)
-                on_duplicate_key_stmt = insert_stmt.on_duplicate_key_update(
-                    last_update=func.current_timestamp())
-                connection.execute(on_duplicate_key_stmt)
+                if self.engine.name == 'mysql':
+                    insert_stmt = insert(Product).values(
+                        **item).prefix_with('IGNORE')
+                    connection.execute(insert_stmt)
+                elif self.engine.name == 'sqlite':
+                    insert_stmt = insert(Product).values(
+                        **item).prefix_with('OR IGNORE')
+                    connection.execute(insert_stmt)
             connection.commit()
 
     def get_untouched_products(self, products):
@@ -119,18 +136,9 @@ class MaxDB(object):
                  for x in ('id', 'title', 'href', 'categoryid')} for item in products]
 
         with Session(self.engine) as session:
-            # empty table
-            # session.query(ProductTmp).delete()
-            # for x in data:
-            #     session.add(ProductTmp(**x))
-            # session.bulk_save_objects([ProductTmp(**x) for x in data])
-            # session.bulk_insert_mappings(ProductTmp,data)
-            # from sqlalchemy import insert
-            # session.execute(insert(ProductTmp),data)
-            # session.commit()
-
             # create temporary table
-            smt_create_table = 'CREATE TEMPORARY TABLE temp (id VARCHAR(100) NOT NULL, title VARCHAR(200) NOT NULL, href VARCHAR(200) NOT NULL, categoryid VARCHAR(200) NOT NULL)'
+            smt_create_table = text(
+                'CREATE TEMPORARY TABLE temp (id VARCHAR(100) NOT NULL, title VARCHAR(200) NOT NULL, href VARCHAR(200) NOT NULL, categoryid VARCHAR(200) NOT NULL)')
             session.execute(smt_create_table)
             session.commit()
 
@@ -143,8 +151,9 @@ class MaxDB(object):
             session.commit()
 
             # get compared result
-            smt_query = 'SELECT id, title, href, categoryid FROM temp WHERE NOT EXISTS( SELECT * FROM product WHERE product.id = temp.id)'
-            return session.execute(smt_query).fetchall()
+            smt_query = text(
+                'SELECT id, title, href, categoryid FROM temp WHERE NOT EXISTS( SELECT * FROM product WHERE product.id = temp.id)')
+            return [dict(zip(('id', 'title', 'href', 'categoryid'), row)) for row in session.execute(smt_query).fetchall()]
 
     def image_set_downloaded(self, pid, href):
         with Session(self.engine) as session:

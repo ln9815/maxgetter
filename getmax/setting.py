@@ -20,13 +20,7 @@ class TestingConfig(BaseConfig):
 
 
 class ProductionConfig(BaseConfig):
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{}:{}@{}:{}/{}".format(
-        os.getenv("DB_USER"),
-        os.getenv("DB_PASSWORD"),
-        os.getenv("DB_HOST"),
-        os.getenv("DB_PORT"),
-        os.getenv("DB_DATABASE"))
-    FOLDER_SAVE = os.getenv("FOLDER_SAVE")
+    SQLITE_DB = 'data-pro.db'    
     LOGGING_LEVEL = logging.INFO
 
 

@@ -39,10 +39,30 @@ class MaxDownloader(object):
         if obj:
             self.config.from_object(obj)
 
-        if 'SQLITE_DB' in self.config.keys():
+        # database configuration
+        mysql_db = True
+        for var in ("DB_USER", "DB_PASSWORD", "DB_HOST", "DB_DATABASE"):
+            if os.getenv(var) is None:
+                mysql_db = False
+                break
+        if mysql_db:
+            self.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://{}:{}@{}:{}/{}".format(
+                os.getenv("DB_USER"),
+                os.getenv("DB_PASSWORD"),
+                os.getenv("DB_HOST"),
+                os.getenv("DB_PORT", 3306),
+                os.getenv("DB_DATABASE"))
+            logger.info(
+                f'mysql database {os.getenv("DB_HOST")}:{os.getenv("DB_PORT")} used.')
+        else:
             fn = os.path.join(self.instance_path, self.config['SQLITE_DB'])
             self.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{fn}'
+            logger.info(f'sqlite database: {fn} used.')
+
+        # other setting
         self.config['ENV'] = env
+        self.config['FOLDER_SAVE'] = os.getenv(
+            "FOLDER_SAVE", os.path.join(self.root_path, 'maxmara_save'))
 
     def init(self):
         db = MaxDB(self.config["SQLALCHEMY_DATABASE_URI"])

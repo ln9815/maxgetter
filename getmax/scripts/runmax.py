@@ -28,7 +28,7 @@ def run(env, initdb, download, retrieve, stream, logfile, loglevel, sendto):
     }
 
     if env.lower() == 'pro':
-        for var in ("DB_USER", "DB_PASSWORD", "DB_HOST", "DB_PORT", "DB_DATABASE", "FOLDER_SAVE"):
+        for var in ("DB_USER", "DB_PASSWORD", "DB_HOST", "DB_DATABASE", "FOLDER_SAVE"):
             if os.getenv(var) is None:
                 click.echo(f'env variable {var} is required.')
                 return
