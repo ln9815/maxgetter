@@ -31,3 +31,5 @@ venv/Lib/site-packages
 
 env.list
 pro.ps1
+# Ignore dynaconf secret files
+.secrets.*

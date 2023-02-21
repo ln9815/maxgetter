@@ -72,7 +72,9 @@ class Image(Base):
 
 class MaxDB(object):
     def __init__(self, db_url) -> None:
-        self.engine = create_engine(db_url, echo=False, future=True)
+        from sqlalchemy.pool import NullPool
+        self.engine = create_engine(
+            db_url, echo=False, poolclass=NullPool)
 
     def add_categroies(self, categories):
         data = [{x: item[x]
@@ -83,19 +85,9 @@ class MaxDB(object):
                 if self.engine.name == 'mysql':
                     insert_stmt = insert(Category).values(
                         **item).prefix_with('IGNORE')
-                    # on_duplicate_key_stmt = insert_stmt.on_duplicate_key_update(
-                    #     name=insert_stmt.inserted.name,
-                    #     season=insert_stmt.inserted.season,
-                    #     rootid=insert_stmt.inserted.rootid,
-                    #     last_update=func.current_timestamp())
                 elif self.engine.name == 'sqlite':
                     insert_stmt = insert(Category).values(
                         **item).prefix_with('OR IGNORE')
-                    # do_update_stmt = insert_stmt.on_conflict_do_update(
-                    #     index_elements=['id'],
-                    #     set_=dict(name=insert_stmt.excluded.name,
-                    #               season=insert_stmt.excluded.season,
-                    #               last_update=func.now()))
                 connection.execute(insert_stmt)
             connection.commit()
 
@@ -120,11 +112,11 @@ class MaxDB(object):
                 item = {x: image[x]
                         for x in ('href', 'filename', 'product_id')}
                 if self.engine.name == 'mysql':
-                    insert_stmt = insert(Product).values(
+                    insert_stmt = insert(Image).values(
                         **item).prefix_with('IGNORE')
                     connection.execute(insert_stmt)
                 elif self.engine.name == 'sqlite':
-                    insert_stmt = insert(Product).values(
+                    insert_stmt = insert(Image).values(
                         **item).prefix_with('OR IGNORE')
                     connection.execute(insert_stmt)
             connection.commit()
@@ -132,28 +124,13 @@ class MaxDB(object):
     def get_untouched_products(self, products):
         assert isinstance(products, list)
 
-        data = [{x: item[x]
-                 for x in ('id', 'title', 'href', 'categoryid')} for item in products]
-
         with Session(self.engine) as session:
-            # create temporary table
-            smt_create_table = text(
-                'CREATE TEMPORARY TABLE temp (id VARCHAR(100) NOT NULL, title VARCHAR(200) NOT NULL, href VARCHAR(200) NOT NULL, categoryid VARCHAR(200) NOT NULL)')
-            session.execute(smt_create_table)
-            session.commit()
+            smt_query = text('SELECT id FROM product')
+            rows = session.execute(smt_query).fetchall()
+            new_ids = set([item['id']
+                          for item in products]).difference(set(rows))
 
-            # insert data to temporary table
-            from sqlalchemy import Table
-            from sqlalchemy.ext.declarative import declarative_base
-            smt_insert = Table('temp', declarative_base(
-            ).metadata, autoload_with=self.engine).insert()
-            session.execute(smt_insert, data)
-            session.commit()
-
-            # get compared result
-            smt_query = text(
-                'SELECT id, title, href, categoryid FROM temp WHERE NOT EXISTS( SELECT * FROM product WHERE product.id = temp.id)')
-            return [dict(zip(('id', 'title', 'href', 'categoryid'), row)) for row in session.execute(smt_query).fetchall()]
+            return [item for item in products if item['id'] in new_ids]
 
     def image_set_downloaded(self, pid, href):
         with Session(self.engine) as session:
@@ -168,6 +145,7 @@ class MaxDB(object):
             Image.product).join(Product.category).where(Image.time_downloaded == None)
         with Session(self.engine) as session:
             imgs = session.execute(stmt).fetchall()
+        logger.debug(f'total {len(imgs)} images is pending.')
         return imgs
 
     def init_db(self):
@@ -191,3 +169,13 @@ class MaxDB(object):
                 catagories.append(MaxRoot(name=name, href=href))
             session.add_all(catagories)
             session.commit()
+    
+    def remove_data(self):
+        smts = ['DELETE FROM image;',
+                'DELETE FROM product;',
+                'DELETE FROM category;',
+                'DELETE FROM maxroot;']
+        with Session(self.engine) as session:
+            for smt in smts:
+                session.execute(text(smt))
+                session.commit()

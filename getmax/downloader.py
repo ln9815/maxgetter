@@ -1,81 +1,43 @@
-import json
 import logging
 import os
 from datetime import datetime
-from asyncio.log import logger
 
-from getmax.config import Config
-from getmax.db import Category, Image, MaxDB, MaxRoot, Product, Session, select
+from getmax.config import settings, get_instance_path
+from getmax.db import MaxDB, MaxRoot, Session, select
 from getmax.page_parser import PageParser
-from getmax.setting import get_setting
 
 logger = logging.getLogger(__name__)
 
-
 class MaxDownloader(object):
-    default_config = dict(MAX_HOST="https://world.maxmara.com",
-                          SQLALCHEMY_DATABASE_URI='sqlite:///:memory:',
-                          )
+    def __init__(self) -> None:
+        pass
 
-    def __init__(self, env="development") -> None:
-        self.root_path = os.path.abspath(os.path.dirname(__file__))
-        self.instance_path = os.path.join(
-            os.path.dirname(self.root_path), "instance")
-        logger.info(
-            f'env: {env}, root path: {self.root_path}, instance path: {self.instance_path}')
-
-        if not os.path.exists(self.instance_path):
-            try:
-                os.makedirs(self.instance_path)
-            except:
-                pass
-
-        self.config = Config(self.root_path, self.default_config)
-        self.make_config(env)
-        logger.info(f'app configuration:\n{json.dumps(self.config, indent=2)}')
-
-    def make_config(self, env):
-        obj = get_setting(env)
-        if obj:
-            self.config.from_object(obj)
-
-        # database configuration
-        mysql_db = True
-        for var in ("DB_USER", "DB_PASSWORD", "DB_HOST", "DB_DATABASE"):
-            if os.getenv(var) is None:
-                mysql_db = False
-                break
-        if mysql_db:
-            self.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://{}:{}@{}:{}/{}".format(
-                os.getenv("DB_USER"),
-                os.getenv("DB_PASSWORD"),
-                os.getenv("DB_HOST"),
-                os.getenv("DB_PORT", 3306),
-                os.getenv("DB_DATABASE"))
-            logger.info(
-                f'mysql database {os.getenv("DB_HOST")}:{os.getenv("DB_PORT")} used.')
+    @property
+    def uri(self):
+        uri = ''
+        if settings.DATABASE_TPYE == 'mysql':
+            uri = f'mysql+pymysql://{settings.MYSQL_USER}:{settings.MYSQL_PASSWORD}@{settings.MYSQL_HOST}:{settings.MYSQL_PORT}/{settings.MYSQL_DATABASE}'
         else:
-            fn = os.path.join(self.instance_path, self.config['SQLITE_DB'])
-            self.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{fn}'
-            logger.info(f'sqlite database: {fn} used.')
+            fn = os.path.join(get_instance_path(), settings.SQLITE_DB)
+            uri = f'sqlite:///{fn}'
+        return uri
 
-        # other setting
-        self.config['ENV'] = env
-        self.config['FOLDER_SAVE'] = os.getenv(
-            "FOLDER_SAVE", os.path.join(self.root_path, 'maxmara_save'))
+    @property
+    def db(self):
+        return MaxDB(self.uri)
 
     def init(self):
-        db = MaxDB(self.config["SQLALCHEMY_DATABASE_URI"])
-        db.init_db()
-        db.init_data()
+        self.db.init_db()
+        self.db.init_data()
+
 
     def retrieve_product_image_info(self):
         '''
         根据数据库配置ROOT信息,获取所有产品及图片位置。
         并将产品及图片信息更新到数据库。
         '''
-        db = MaxDB(self.config["SQLALCHEMY_DATABASE_URI"])
-        parser = PageParser(self.config["MAX_HOST"])
+        db = self.db
+        parser = PageParser()
 
         session = Session(db.engine)
         stmt = select(MaxRoot)
@@ -103,20 +65,26 @@ class MaxDownloader(object):
             untouched_products), len(product_list))
 
         for index, product in enumerate(untouched_products):
+            if settings.ENV != 'pro' and index >= 5:
+                break
             db.add_product(product)
             images = parser.parse_detail_page(product["href"])
             db.add_product_images(product, images)
             logger.info('%d / %d product: %s, %d images added.', index + 1,
                         len(untouched_products), product["href"], len(images))
 
-    def download_pending_images(self):
-        db = MaxDB(self.config["SQLALCHEMY_DATABASE_URI"])
-        parser = PageParser(self.config["MAX_HOST"])
+    def download_pending_images(self,folder=None):
+        db = self.db
+        parser = PageParser()
         images = db.get_pending_images()
 
+        if folder is None:
+            folder = os.path.join(get_instance_path(), 'maxmara')
+
         for index, img in enumerate(images):
-            folder_save = os.path.join(
-                self.config['FOLDER_SAVE'], img.name, datetime.now().strftime("%Y-%m"))
+            if settings.ENV != 'pro' and index >= 5:
+                break
+            folder_save = os.path.join(folder, img.name, datetime.now().strftime("%Y-%m"))
             if not os.path.exists(folder_save):
                 os.makedirs(folder_save)
             fn = os.path.join(folder_save, img.filename)

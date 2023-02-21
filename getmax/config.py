@@ -1,55 +1,44 @@
-
-import errno
-import json
 import os
-import typing as t
+import logging
+from dynaconf import Dynaconf
+
+logger = logging.getLogger(__name__)
 
 
-class Config(dict):
-    def __init__(self, root_path: str, defaults: t.Optional[dict] = None) -> None:
-        dict.__init__(self, defaults or {})
-        self.root_path = root_path
-
-    def from_object(self, obj: object) -> None:
-        for key in dir(obj):
-            if key.isupper():
-                self[key] = getattr(obj, key)
-
-    def from_file(
-        self,
-        filename: str,
-        load: t.Callable[[t.IO[t.Any]], t.Mapping],
-        silent: bool = False,
-    ) -> bool:
-
-        filename = os.path.join(self.root_path, filename)
-
+def get_instance_path():
+    instance_path = None
+    if os.getenv('WORK_DIR'):
+        if os.path.exists(os.getenv('WORK_DIR')):
+            instance_path = os.getenv('WORK_DIR')
+    else:
+        instance_path = os.path.join(
+                    os.path.dirname(os.path.abspath(os.path.dirname(__file__))), "instance")
+    
+    if not os.path.exists(instance_path):
         try:
-            with open(filename) as f:
-                obj = load(f)
-        except OSError as e:
-            if silent and e.errno in (errno.ENOENT, errno.EISDIR):
-                return False
+            os.makedirs(instance_path)
+        except:
+            pass
+    
+    return instance_path
 
-            e.strerror = f"Unable to load configuration file ({e.strerror})"
-            raise
+def get_settings_files():
+    instance_path = get_instance_path()
 
-        return self.from_mapping(obj)
+    fn_setting = os.path.join(instance_path, 'settings.toml')
+    fn_secrets = os.path.join(instance_path, 'secrets.toml')
+    if not os.path.exists(fn_setting):
+        logger.warning(f'setting file {fn_setting} doese not exist.')
+        assert os.path.exists(fn_setting)
+    if not os.path.exists(fn_secrets):
+        logger.warning(f'setting file {fn_secrets} doese not exist.')
+        assert os.path.exists(fn_secrets)
+        
+    return [fn_setting,fn_secrets]
 
-    def from_mapping(
-        self, mapping: t.Optional[t.Mapping[str, t.Any]] = None, **kwargs: t.Any
-    ) -> bool:
-        mappings: t.Dict[str, t.Any] = {}
-        if mapping is not None:
-            mappings.update(mapping)
-        mappings.update(kwargs)
-        for key, value in mappings.items():
-            if key.isupper():
-                self[key] = value
-        return True
+settings = Dynaconf(
+    envvar_prefix="DYNACONF",
+    settings_files=get_settings_files(),
+)
+settings.INSTANCE_PATH = get_instance_path()
 
-    def from_json(self, filename: str, silent: bool = False) -> bool:
-        return self.from_file(filename, json.load, silent=silent)
-
-    def __repr__(self) -> str:
-        return f"<{type(self).__name__} {dict.__repr__(self)}>"

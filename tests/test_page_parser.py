@@ -6,9 +6,9 @@ from getmax.page_parser import PageParser
 logger = logging.getLogger(__name__)
 
 @pytest.fixture
-def parser(app):
-    p = PageParser(app.config["MAX_HOST"])
-    return p 
+def parser():
+    p = PageParser()
+    yield p 
 
 def test_parse_single_category_page(parser):
     urls = ('/clothing/skirts','/clothing/womens-dresses?focus=true&page=2&partial=true&q=%3AtopRated&resetQuery=true&save=false&sort=topRated')

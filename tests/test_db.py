@@ -5,34 +5,7 @@ import pytest
 import logging
 from sqlalchemy import text
 
-logger = logging.getLogger(__name__)
-
-
-def test_sqlite_init_db(db_sqlite):
-    fun_init_db(db_sqlite)
-
-
-def test_sqlite_init_data(db_sqlite):
-    fun_init_db(db_sqlite)
-
-
-def test_sqlite_add_categroies(db_sqlite):
-    fun_add_categroies(db_sqlite)
-
-
-def test_mysql_init_db(db_mysql):
-    fun_init_db(db_mysql)
-
-
-def test_mysql_init_data(db_mysql):
-    fun_init_db(db_mysql)
-
-
-def test_mysql_add_categroies(db_mysql):
-    fun_add_categroies(db_mysql)
-
-
-def fun_init_db(db):
+def test_init_db(db):
     db.init_db()
 
     from sqlalchemy import inspect
@@ -46,16 +19,7 @@ def fun_init_db(db):
     assert inspector.has_table('image')
 
 
-def fun_init_data(db):
-    db.init_db()
-    db.init_data()
-
-    with db.engine.connect() as conn:
-        results = conn.execute(text("SELECT * FROM max_root")).fetchall()
-        assert len(results) > 0
-
-
-def fun_add_categroies(db):
+def test_add_categroies(db):
     db.init_db()
     db.init_data()
 

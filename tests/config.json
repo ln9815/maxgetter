@@ -1,5 +1,0 @@
-{
-    "MAX_HOST": "https://world.maxmara.com",
-    "SQLALCHEMY_DATABASE_URI": "mysql+pymysql://root:****@****:3306/max_db",
-    "LOGGING_LEVEL": 20
-}
