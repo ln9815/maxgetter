@@ -1,5 +1,5 @@
 # Distribution / packaging
-dist/
+dist/*.tar.gz
 instance/*.db
 *.egg-info/
 
