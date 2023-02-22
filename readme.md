@@ -3,7 +3,7 @@
 
 ## 准备工作
 从仓库拷贝如下文件到当前文件：
-- dist文件夹的wheel文件
+- dist文件夹的wheel文件（或者下载源码build）。
 - instance文件夹下的settings.toml
 
 在当前该文件夹下新建文件secrets.toml。该文件包括mysql数据登录密码，以及POP3邮件登录密码。内容如下：
