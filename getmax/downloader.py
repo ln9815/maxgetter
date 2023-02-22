@@ -15,7 +15,7 @@ class MaxDownloader(object):
     @property
     def uri(self):
         uri = ''
-        if settings.DATABASE_TPYE == 'mysql':
+        if str(settings.DATABASE_TPYE).lower() == 'mysql':
             uri = f'mysql+pymysql://{settings.MYSQL_USER}:{settings.MYSQL_PASSWORD}@{settings.MYSQL_HOST}:{settings.MYSQL_PORT}/{settings.MYSQL_DATABASE}'
         else:
             fn = os.path.join(get_instance_path(), settings.SQLITE_DB)
