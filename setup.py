@@ -6,7 +6,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'requests', 'sqlalchemy', 'pymysql', 'Click', 'schedule'
+        'requests', 'sqlalchemy', 'pymysql', 'Click', 'schedule','Dynaconf'
     ],
 
     entry_points={

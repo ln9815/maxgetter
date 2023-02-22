@@ -1,0 +1,20 @@
+# MYSQL Database
+MYSQL_HOST = 'wekate.com'
+MYSQL_PORT = 3306
+MYSQL_DATABASE = 'test_max'
+MYSQL_USER = 'root'
+
+# Sqlite Database
+SQLITE_DB = 'max.db'
+
+# mail notification
+MAIL_SENDER_SMTP = 'smtp.qq.com'
+MAIL_SENDER_ADDR = '76541388@qq.com'
+MAIL_SENDTO = 'mingxiangy@126.com'
+
+# application setting
+IMAGE_FOLDER = 'download'
+DATABASE_TPYE = 'SQLITE'
+LOG_FILE = 'max.log'
+LOG_LEVEL = 'DEBUG'
+ENV = 'pro'

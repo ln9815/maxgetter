@@ -1,6 +1,6 @@
 # Distribution / packaging
 dist/
-instance/
+instance/*.db
 *.egg-info/
 
 # Unit test / coverage reports
@@ -32,4 +32,5 @@ venv/Lib/site-packages
 env.list
 pro.ps1
 # Ignore dynaconf secret files
-.secrets.*
+secrets.*
+*.code-workspace
