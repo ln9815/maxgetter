@@ -12,7 +12,7 @@ Base = declarative_base()
 
 class MaxRoot(Base):
     __tablename__ = "maxroot"
-    id = Column(Integer, primary_key=True, autoincrement=True)
+    id = Column(Integer, primary_key=True)
     name = Column(String(200), nullable=False)
     href = Column(String(200), nullable=False)
     last_update = Column(DateTime, nullable=True, default=func.now())
@@ -55,8 +55,7 @@ class Product(Base):
 
 class Image(Base):
     __tablename__ = "image"
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    href = Column(String(200), nullable=False)
+    href = Column(String(200), primary_key=True, nullable=False)
     filename = Column(String(200), nullable=False)
     time_requested = Column(DateTime, nullable=True, default=func.now())
     time_downloaded = Column(DateTime, nullable=True)
@@ -72,9 +71,7 @@ class Image(Base):
 
 class MaxDB(object):
     def __init__(self, db_url) -> None:
-        from sqlalchemy.pool import NullPool
-        self.engine = create_engine(
-            db_url, echo=False, poolclass=NullPool)
+        self.engine = create_engine(db_url, echo=False)
 
     def add_categroies(self, categories):
         data = [{x: item[x]
@@ -149,33 +146,44 @@ class MaxDB(object):
         return imgs
 
     def init_db(self):
-        Base.metadata.drop_all(self.engine)
         Base.metadata.create_all(self.engine)
+        self.remove_data()
 
     def init_data(self):
         catas = [
-            ('Dresses', '/clothing/womens-dresses'),
-            ('Jumpsuits', '/clothing/elegant-womens-jumpsuits'),
-            ('Knitwear',  '/clothing/womens-knitwear-sweaters'),
-            ('Blouses', '/clothing/womens-blouses-and-shirts'),
-            ('Tops and T-shirts',  '/clothing/womens-tops-and-t-shirts'),
-            ('Skirts',  '/clothing/skirts'),
-            ('Trousers and Jeans', '/clothing/womens-trousers-and-jeans'),
+            (1, 'Dresses', '/clothing/womens-dresses'),
+            (2, 'Jumpsuits', '/clothing/elegant-womens-jumpsuits'),
+            (3, 'Knitwear',  '/clothing/womens-knitwear-sweaters'),
+            (4, 'Blouses', '/clothing/womens-blouses-and-shirts'),
+            (5, 'Tops and T-shirts',  '/clothing/womens-tops-and-t-shirts'),
+            (6, 'Skirts',  '/clothing/skirts'),
+            (7, 'Trousers and Jeans', '/clothing/womens-trousers-and-jeans'),
         ]
 
+        items = [dict(zip(('id', 'name', 'href'), row)) for row in catas]
+
         with Session(self.engine) as session:
-            catagories = []
-            for name, href in catas:
-                catagories.append(MaxRoot(name=name, href=href))
-            session.add_all(catagories)
+            for item in items:
+                if self.engine.name == 'mysql':
+                    insert_stmt = insert(MaxRoot).values(
+                        **item).prefix_with('IGNORE')
+                    session.execute(insert_stmt)
+                elif self.engine.name == 'sqlite':
+                    insert_stmt = insert(MaxRoot).values(
+                        **item).prefix_with('OR IGNORE')
+                    session.execute(insert_stmt)
             session.commit()
-    
+
     def remove_data(self):
-        smts = ['DELETE FROM image;',
-                'DELETE FROM product;',
-                'DELETE FROM category;',
-                'DELETE FROM maxroot;']
-        with Session(self.engine) as session:
-            for smt in smts:
-                session.execute(text(smt))
+        def delete_data(table):
+            try:
+                session = Session(self.engine)
+                session.execute(text(f'DELETE FROM {table};'))
                 session.commit()
+            except Exception as e:
+                pass
+            finally:
+                session.close()
+
+        for table in ('image', 'product', 'category', 'maxroot'):
+            delete_data(table)

@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 def test_retrieve_product_image_info(app, db):
 
     with db.engine.connect() as conn:
-        conn.execute(text("INSERT into maxroot(name, href) VALUES (:name, :href)"),
+        conn.execute(text("INSERT into maxroot(id, name, href) VALUES (:id, :name, :href)"),
                      [{"id": 1, "name": "Dresses", "href": "/clothing/womens-dresses"},])
         conn.commit()
         app.retrieve_product_image_info()
@@ -46,7 +46,7 @@ def test_download_pending_images(app, db):
     
     
     with db.engine.connect() as conn:
-        conn.execute(text("INSERT into maxroot(name, href) VALUES (:name, :href)"),
+        conn.execute(text("INSERT into maxroot(id, name, href) VALUES (:id, :name, :href)"),
                      [{"id":1, "name": "Dresses", "href": "/clothing/womens-dresses"},])
         conn.execute(text("INSERT into category(id,name,season,rootid) VALUES (:id,:name,:season,:rootid)"),
                      [{"id": 202, "name": "dresses", "season": "SS2022", "rootid": 1},])

@@ -89,9 +89,24 @@ def logging_init(log_file=None, log_level=logging.DEBUG,
         log_file = '{}.log'.format(''.join(fn_caller.split('.')[:-1]))
     fmt = '%(asctime)-15s-%(filename)s-%(lineno)d-%(name)s-%(levelname)s-%(message)s' if fmt is None else fmt
 
+    LOG_LEVLES = {
+        'DEBUG': logging.DEBUG,
+        'INFO': logging.INFO,
+        'WARNING': logging.WARNING,
+        'ERROR': logging.ERROR
+    }
+
+    loglevel = logging.DEBUG
+    if isinstance(log_level,int):
+        loglevel = log_level
+    if isinstance(log_level,str):
+        if log_level.upper() in LOG_LEVLES.keys():
+            loglevel = LOG_LEVLES[log_level.upper()]
+
+
     formatter = logging.Formatter(fmt)
     fh = logging.FileHandler(log_file, encoding='utf-8')
-    fh.setLevel(log_level)
+    fh.setLevel(loglevel)
     fh.setFormatter(formatter)
 
     logger_root = logging.getLogger()

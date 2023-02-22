@@ -8,56 +8,49 @@ logger = logging.getLogger(__name__)
 
 
 @click.command()
-@click.option('--env', type=click.Choice(['DEV', 'TST', 'PRO'], case_sensitive=False), required=True, help=f'Envrionment of app.')
+@click.option('--workdir', '-w', required=True, type=str, help='work directory for this app.')
+@click.option('--stream', '-s', is_flag=True, help='Stream output for log.')
 @click.option('--initdb', is_flag=True, help='Init database and data.')
 @click.option('--download', '-d', is_flag=True, help='Downlaod the pending images in database.')
 @click.option('--retrieve', '-r', is_flag=True, help='Retrieve product and image information, and update to database.')
-@click.option('--logfile', is_flag=True, help='Where log file to save.')
-@click.option('--loglevel', type=click.Choice(['DEBUG', 'INFO', 'WARNING', 'ERROR'], case_sensitive=False), default='INFO', help=f'log levels')
-@click.option('--stream', '-s', is_flag=True, help='Stream output for log.')
-@click.option('--sendto', is_flag=True, help='Send email when error occured.')
-def run(env, initdb, download, retrieve, stream, logfile, loglevel, sendto):
-    env_dict = {'dev': 'development',
-                'tst': 'testing',
-                'pro': 'production'}
-    levels = {
-        'DEBUG': logging.DEBUG,
-        'INFO': logging.INFO,
-        'WARNING': logging.WARNING,
-        'ERROR': logging.ERROR
-    }
-
-    if env.lower() == 'pro':
-        for var in ("DB_USER", "DB_PASSWORD", "DB_HOST", "DB_DATABASE", "FOLDER_SAVE"):
-            if os.getenv(var) is None:
-                click.echo(f'env variable {var} is required.')
-                return
-
-    app = MaxDownloader(env_dict[env.lower()])
-    if os.getenv('LOG_FILE') is not None:
-        logfile = os.getenv('LOG_FILE')
-    if not logfile:
-        logfile = os.path.join(app.instance_path, 'max.log')
-    click.echo(f'start the application, log file saved on {logfile}.')
-
-    if os.getenv('MAIL_SENDTO') is not None:
-        sendto = os.getenv('MAIL_SENDTO')
-    if sendto:
-        logging_init(log_file=logfile, log_level=levels[loglevel.upper(
-        )], stream=stream, app='MaxGetter', sendto=sendto)
+def run(workdir, stream, initdb, download, retrieve):
+    
+    if workdir:
+        if os.path.exists(workdir):
+            os.environ['WORK_DIR'] = workdir
+        else:
+            print(f'{workdir} does not exists.')
+            return
     else:
-        logging_init(log_file=logfile,
-                     log_level=levels[loglevel.upper()], stream=stream)
+        if os.environ.get('WORK_DIR') is None:
+            print(f'env var WORK_DIR does not exist.')
+            return
+
+    from getmax.config import settings
+
+    logfile = os.path.join(settings.INSTANCE_PATH, settings.LOG_FILE)
+    click.echo(f'log file saved on {logfile}.')
+
+    if str(settings.MAIL_SENDTO).strip() != '':
+        logging_init(log_file=settings.LOG_FILE, log_level=settings.LOG_LEVEL,
+                     stream=stream, app='MaxGetter', sendto=settings.MAIL_SENDTO)
+    else:
+        logging_init(log_file=settings.LOG_FILE,
+                     log_level=settings.LOG_LEVEL, stream=stream)
+
+    app = MaxDownloader()
 
     if initdb:
         click.echo('Start to init databas.')
         app.init()
         click.echo('Database was initialized.')
     if retrieve:
+        click.echo('Start to init retrieve product and image information.')
         app.retrieve_product_image_info()
         click.echo(
-            'Product and image inforamtion were retrieved form websit, and updated to database.')
+            'Product and image inforamtion were retrieved and saved to database.')
     if download:
+        click.echo('Start to download pending images.')
         app.download_pending_images()
         click.echo('Pending images in database was downlaoded and saved.')
 

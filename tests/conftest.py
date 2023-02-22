@@ -1,10 +1,10 @@
 import pytest
-import os,logging
 
 from getmax.config import settings
 from getmax.downloader import MaxDownloader
 
 settings.DATABASE_TPYE = 'sqlite'
+settings.SQLITE_DB = 'max_test.db'
 settings.ENV = 'test'
 
 @pytest.fixture
