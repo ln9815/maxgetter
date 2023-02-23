@@ -1,28 +1,32 @@
 
-# MaxGetter使用说明
+# MaxGetter User Manual
+## Main Functions
+The main function of MaxGetter is to download high-definition images from the maxmara website.
 
-## 准备工作
-从仓库拷贝如下文件到当前文件：
-- dist文件夹的wheel文件（或者下载源码build）。
-- instance文件夹下的settings.toml
+## Installation and Usage
 
-在当前该文件夹下新建文件secrets.toml。该文件包括mysql数据登录密码，以及POP3邮件登录密码。内容如下：
+### Preparation
+Copy the following files from the repository to the current file:
+- The wheel file in the dist folder (or download the source code build).
+- settings.toml in the instance folder.
+
+Create a new file secrets.toml in the current folder. The file includes the login password for the MySQL database and the login password for the POP3 email. The contents are as follows:
 
 	# mysql
 	MYSQL_PASSWORD = 'yourpassword'
 	# mail
 	MAIL_SENDER_PASSWORD = 'yourpassword'
 
-按实际需求配置setting.toml文件。
+Configure the setting.toml file according to the actual needs.
 
-## venv安装和使用
-创建venv环境安装。
+### venv Installation and Usage
+Create a venv environment installation.
 
 	python -m venv venv
 	.\venv\Scripts\activate
 	pip install .\getmax-0.1.3-py3-none-any.whl
 
-验证程序入口文件运行是否正常? 正常输出结果下：
+check the program entry file if running normally? The result should be:
 
 	(venv) PS D:\CodeWork\ptest> runmax --help
 	Usage: runmax [OPTIONS]
@@ -36,31 +40,29 @@
 	-s, --stream    Stream output for log.
 	--help          Show this message and exit.
 
-之后可初始化数据库，并开始拉取网站图片。
+After that, you can initialize the database and start fetching website images.
 
-	runmax --workdir {your_folder}\ --initdb
-	runmax --workdir {your_folder}\ --rds
+	runmax --workdir {your_folder} --initdb
+	runmax --workdir {your_folder} --rds
 
+### Docker Installation and Usage
 
-## Docker安装和使用
-在当前文件夹下创建Dockfile文件，文件内容如下：
+Create a Dockfile file in the current folder. The file contents are as follows:
 
 	FROM python:3
 	WORKDIR /app
 	ENV WORK_DIR /app
-	COPY dailyrun-0.1.0-py3-none-any.whl ./
 	COPY getmax-0.1.3-py3-none-any.whl ./
-	RUN pip install getmax-0.1.3-py3-none-any.whl -i https://mirrors.aliyun.com/pypi/simple/
+	RUN pip install getmax-0.1.3-py3-none-any.whl
 	CMD ["bash"]
 
-安装Docker镜像。
-	
-	docker build -t maxgetter .
-	docker run -itd --name maxapp -v /share/fs/max_downlaod:/app -v /etc/localtime:/etc/localtime maxgetter
+Install the Docker image.
 
-验证程序入口文件运行是否正常? 正常输出结果下：
-	
-	[~] # docker exec -it maxtest runmax --help
+	docker build -t maxgetter .
+	docker run -itd --name maxapp -v {your_folder}:/app -v /etc/localtime:/etc/localtime maxgetter
+check the program if running normally? The result should be:
+
+	[~] # docker exec -it maxapp runmax --help
 	Usage: runmax [OPTIONS]
 
 	Options:
@@ -71,8 +73,25 @@
 	-d, --download  Downlaod the pending images in database.
 	-s, --stream    Stream output for log.
 	--help          Show this message and exit.
+After that, you can initialize the database and start fetching website images.
 
-之后可初始化数据库，并开始拉取网站图片。
-	
 	docker exec -it maxapp runmax --initdb
 	docker exec -it maxapp runmax --rds
+
+### Database
+The program supports MySQL and SQLite databases. The parameter DATABASE_TYPE in setting.toml can specify the type of database, such as MySQL or SQLite. 
+Before start to retrieve images, following command needs to be executed to initialize the database.
+	
+	# docker 
+	docker exec -it maxapp runmax --initdb
+	# env
+	runmax --initdb --workdir {your_folder}
+
+
+### Downloading Images
+the command of downloading images is:
+	
+	# docker 
+	docker exec -it maxapp runmax --rds
+	# env
+	runmax --rds --workdir {your_folder}
