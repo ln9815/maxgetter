@@ -20,6 +20,8 @@ class MaxDownloader(object):
         else:
             fn = os.path.join(get_instance_path(), settings.SQLITE_DB)
             uri = f'sqlite:///{fn}'
+        _uri = uri.replace(settings.MYSQL_PASSWORD,'***')
+        logger.debug(f'uri: {_uri}')
         return uri
 
     @property

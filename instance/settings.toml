@@ -14,7 +14,7 @@ MAIL_SENDTO = 'mingxiangy@126.com'
 
 # application setting
 IMAGE_FOLDER = 'download'
-DATABASE_TPYE = 'SQLITE'
+DATABASE_TPYE = 'sqlite'
 LOG_FILE = 'max.log'
 LOG_LEVEL = 'DEBUG'
 ENV = 'pro'

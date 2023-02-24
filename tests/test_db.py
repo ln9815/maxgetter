@@ -5,6 +5,10 @@ import pytest
 import logging
 from sqlalchemy import text
 
+@pytest.fixture
+def db(app):
+    yield app.db
+
 def test_init_db(db):
     db.init_db()
 

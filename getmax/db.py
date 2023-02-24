@@ -71,7 +71,8 @@ class Image(Base):
 
 class MaxDB(object):
     def __init__(self, db_url) -> None:
-        self.engine = create_engine(db_url, echo=False)
+        from sqlalchemy.pool import NullPool
+        self.engine = create_engine(db_url, echo=False,poolclass=NullPool)
 
     def add_categroies(self, categories):
         data = [{x: item[x]
@@ -146,8 +147,13 @@ class MaxDB(object):
         return imgs
 
     def init_db(self):
-        Base.metadata.create_all(self.engine)
-        self.remove_data()
+        from getmax.config import settings
+        if str(settings.ENV).lower() == 'test' and str(settings.DATABASE_TPYE).lower() == 'mysql':
+            Base.metadata.create_all(self.engine)
+            self.remove_data()
+        else:
+            Base.metadata.drop_all(self.engine)
+            Base.metadata.create_all(self.engine)
 
     def init_data(self):
         catas = [

@@ -1,19 +1,17 @@
 
-from turtle import Turtle
 import pytest
 import logging
 import os
 import tempfile
 
-from sqlalchemy import text
+from sqlalchemy import text,create_engine
 logger = logging.getLogger(__name__)
 
 
-def test_retrieve_product_image_info(app, db):
-
-    with db.engine.connect() as conn:
+def test_retrieve_product_image_info(app):
+    with app.db.engine.connect() as conn:
         conn.execute(text("INSERT into maxroot(id, name, href) VALUES (:id, :name, :href)"),
-                     [{"id": 1, "name": "Dresses", "href": "/clothing/womens-dresses"},])
+                    [{"id": 1, "name": "Dresses", "href": "/clothing/womens-dresses"},])
         conn.commit()
         app.retrieve_product_image_info()
         
@@ -31,9 +29,9 @@ def test_retrieve_product_image_info(app, db):
         rows_found = conn.execute(
             text("SELECT COUNT(*) FROM image")).scalar()
         assert rows_found > 0
+    
 
-
-def test_download_pending_images(app, db):
+def test_download_pending_images(app):
     def file_found(filename,foler):
         found = False
         for root, dir, files in os.walk(foler):
@@ -45,7 +43,7 @@ def test_download_pending_images(app, db):
         return found
     
     
-    with db.engine.connect() as conn:
+    with app.db.engine.connect() as conn:
         conn.execute(text("INSERT into maxroot(id, name, href) VALUES (:id, :name, :href)"),
                      [{"id":1, "name": "Dresses", "href": "/clothing/womens-dresses"},])
         conn.execute(text("INSERT into category(id,name,season,rootid) VALUES (:id,:name,:season,:rootid)"),
