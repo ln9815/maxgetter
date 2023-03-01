@@ -14,7 +14,10 @@ logger = logging.getLogger(__name__)
 @click.option('--stream', '-s', is_flag=True, help='Stream output for log.')
 def run(workdir, stream, initdb, download, retrieve):
 
-    old_env = os.getenv('WORK_DIR')
+    # save old env value
+    env_old = {env: os.getenv(env) for env in ('WORK_DIR', 'MAIL_SENDER_SMTP','MAIL_SENDER_ADDR','MAIL_SENDER_PASSWORD')}
+
+    # set work dirctory
     if workdir:
         if os.path.exists(workdir):
             os.environ['WORK_DIR'] = workdir
@@ -25,6 +28,7 @@ def run(workdir, stream, initdb, download, retrieve):
     if os.getenv('WORK_DIR') is None:
         print(f'env var WORK_DIR does not exist.')
         exit(-1)
+    assert os.getenv('WORK_DIR') is not None
 
     from getmax.config import settings
     from getmax.downloader import MaxDownloader
@@ -38,6 +42,13 @@ def run(workdir, stream, initdb, download, retrieve):
     logfile = os.path.join(settings.INSTANCE_PATH, settings.LOG_FILE)
     click.echo(f'log file saved on {logfile}.')
 
+
+    # set mail configuration
+    os.environ['MAIL_SENDER_SMTP'] = settings.MAIL_SENDER_SMTP
+    os.environ['MAIL_SENDER_ADDR'] = settings.MAIL_SENDER_ADDR
+    os.environ['MAIL_SENDER_PASSWORD'] = settings.MAIL_SENDER_PASSWORD
+
+    # set logging
     if str(settings.MAIL_SENDTO).strip() != '':
         logging_init(log_file=settings.LOG_FILE, log_level=settings.LOG_LEVEL,
                      stream=stream, app='MaxGetter', sendto=settings.MAIL_SENDTO)
@@ -61,10 +72,13 @@ def run(workdir, stream, initdb, download, retrieve):
         app.download_pending_images()
         click.echo('Pending images in database was downlaoded and saved.')
 
-    if old_env:
-        os.environ['WORK_DIR'] = old_env
-    else:
-        del os.environ['WORK_DIR']
+    # reset env to old value
+    for env in ('WORK_DIR', 'MAIL_SENDER_SMTP','MAIL_SENDER_ADDR','MAIL_SENDER_PASSWORD'):
+        if env_old[env]:
+            os.environ[env] = env_old[env]
+        else:
+            del os.environ[env]
+          
 
 
 def do():

@@ -125,10 +125,13 @@ class MaxDB(object):
         with Session(self.engine) as session:
             smt_query = text('SELECT id FROM product')
             rows = session.execute(smt_query).fetchall()
-            new_ids = set([item['id']
-                          for item in products]).difference(set(rows))
+            ids_database = set([row[0] for row in rows])
+            ids_website = set([item['id'] for item in products])
 
-            return [item for item in products if item['id'] in new_ids]
+            ids_new = ids_website.difference(ids_database)
+            new_items = [item for item in products if item['id'] in ids_new]
+
+            return new_items
 
     def image_set_downloaded(self, pid, href):
         with Session(self.engine) as session:
