@@ -39,7 +39,7 @@ class MailLogHandler(logging.Handler):
         body = tpl.safe_substitute(para)
         subject = '[{}] Notification from {}'.format(
             para['levelname'], para['app'])
-        send_mail('mingxiangy@126.com', subject, body, _subtype='html')
+        send_mail(self.sendto, subject, body, _subtype='html')
 
 
 def send_mail(sendto, subject, content, _subtype='plain'):

@@ -49,9 +49,9 @@ def run(workdir, stream, initdb, download, retrieve):
     os.environ['MAIL_SENDER_PASSWORD'] = settings.MAIL_SENDER_PASSWORD
 
     # set logging
-    if str(settings.MAIL_SENDTO).strip() != '':
+    if str(settings.LOG_MAILTO).strip() != '':
         logging_init(log_file=settings.LOG_FILE, log_level=settings.LOG_LEVEL,
-                     stream=stream, app='MaxGetter', sendto=settings.MAIL_SENDTO)
+                     stream=stream, app='MaxGetter', sendto=settings.LOG_MAILTO)
     else:
         logging_init(log_file=settings.LOG_FILE,
                      log_level=settings.LOG_LEVEL, stream=stream)

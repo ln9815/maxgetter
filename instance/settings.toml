@@ -10,11 +10,14 @@ SQLITE_DB = 'max.db'
 # mail notification
 MAIL_SENDER_SMTP = 'smtp.qq.com'
 MAIL_SENDER_ADDR = '76541388@qq.com'
-MAIL_SENDTO = 'mingxiangy@126.com'
 
 # application setting
 IMAGE_FOLDER = 'download'
 DATABASE_TPYE = 'sqlite'
+ENV = 'pro'
+
+# log setting
 LOG_FILE = 'max.log'
 LOG_LEVEL = 'DEBUG'
-ENV = 'pro'
+LOG_MAILTO = 'mingxiangy@126.com'
+
